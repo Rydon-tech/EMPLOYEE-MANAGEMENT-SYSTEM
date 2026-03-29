@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMPLOYEE MANAGEMENT APP</title>
     <link rel="stylesheet" href="style.css">
-    
-</head>
-
 </head>
 <body>
 
@@ -15,19 +12,43 @@
     <nav>
        <a href="index.html">Home</a>
        <a href="new-contact.html">New Contact</a>
-       <a href="view-contacts.html">View Contacts</a>  
-    
-    </nav>
-    
-       <div class="container">
-    <h1>Employee Management System</h1>
+       <a href="view-contacts.html">View Contacts</a>
+       <button id="themeToggle" class="theme-toggle">🌙</button>
+
+    <h1>🚀 Employee Management System</h1>
     <p>
         Streamline your workforce management with our comprehensive employee database.
         Easily register new team members, browse existing staff information,
         and maintain a centralized hub for all organizational data.
     </p>
 
-    <br>
+    <!-- Statistics Dashboard -->
+    <div class="stats-container">
+        <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-number" id="totalEmployees">3</div>
+            <div class="stat-label">Total Employees</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">🏢</div>
+            <div class="stat-number" id="totalDepartments">3</div>
+            <div class="stat-label">Departments</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">📈</div>
+            <div class="stat-number" id="growthRate">+15%</div>
+            <div class="stat-label">Monthly Growth</div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+        <h3>Quick Actions</h3>
+        <div class="action-buttons">
+            <a href="new-contact.html" class="action-btn primary">➕ Add New Employee</a>
+            <a href="view-contacts.html" class="action-btn secondary">📋 View All Contacts</a>
+        </div>
+    </div>
 
 
     </div>

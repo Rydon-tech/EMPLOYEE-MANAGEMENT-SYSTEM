@@ -12,12 +12,20 @@
     <a href="index.html">Home</a>
     <a href="new-contact.html">New Contact</a>
     <a href="view-contacts.html">View Contacts</a>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
 </nav>
 
 <div class="container">
-    <h2>Employee Contacts</h2>
+    <h2>📋 Employee Contacts</h2>
      <p>Below is a list of all employees in the system.</p>
-    <table>
+
+     <!-- Search Bar -->
+     <div class="search-container">
+         <input type="text" id="searchInput" placeholder="🔍 Search employees by name, email, or department..." onkeyup="searchEmployees()">
+         <div class="search-results" id="searchResults"></div>
+     </div>
+
+    <table id="employeeTable">
         <tr>
             <th>Name</th>
             <th>Email</th>
