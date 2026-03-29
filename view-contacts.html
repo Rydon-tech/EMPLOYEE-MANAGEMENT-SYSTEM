@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="new-contact.html">New Contact</a>
+    <a href="view-contacts.html">View Contacts</a>
+</nav>
+
+<div class="container">
+    <h2>Employee Contacts</h2>
+     <p>Below is a list of all employees in the system.</p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Department</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>Sarah Johnson</td>
+            <td>sarah.johnson@company.com</td>
+            <td>0723456789</td>
+            <td>Human Resources</td>
+            <td>
+                <button onclick="viewDetails()">Details</button>
+                <button onclick="editContact()">Edit</button>
+                <button onclick="deleteContact()">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Michael Chen</td>
+            <td>michael.chen@company.com</td>
+            <td>0734567890</td>
+            <td>Finance</td>
+            <td>
+                <button onclick="viewDetails()">Details</button>
+                <button onclick="editContact()">Edit</button>
+                <button onclick="deleteContact()">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Emily Rodriguez</td>
+            <td>emily.rodriguez@company.com</td>
+            <td>0745678901</td>
+            <td>Marketing</td>
+            <td>
+                <button onclick="viewDetails()">Details</button>
+                <button onclick="editContact()">Edit</button>
+                <button onclick="deleteContact()">Delete</button>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+<script src="main.js"></script>
+<footer style="text-align:center; padding:15px; margin-top:20px; color:gray;">
+    © 2026 Employee Management System
+</footer>
+</body>
+</html>

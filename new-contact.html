@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="new-contact.html">New Contact</a>
+    <a href="view-contacts.html">View Contacts</a>
+</nav>
+
+<div class="container">
+<h2>Add New Employee</h2>
+
+   <form id="contactform" onsubmit="submitForm(event)">
+    
+    <input type="text" name="fullName" placeholder="Full Name" required>
+    <input type="number" name="idNumber" placeholder="ID Number" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <input type="text" name="department" placeholder="Department" required>
+    <input type="text" name="position" placeholder="Position" required>
+
+    <button type="submit">Add Employee</button>
+   </form>
+</div>
+
+<script src="main.js"></script>
+
+<footer style="text-align:center; padding:15px; margin-top:20px; color:gray;">
+    © 2026 Employee Management System
+</footer>
+</body>
+</html>
